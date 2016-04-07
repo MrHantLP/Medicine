@@ -50,6 +50,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDV.Designer.cs">
+      <DependentUpon>addDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addFG.Designer.cs">
+      <DependentUpon>addFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNotice.Designer.cs">
+      <DependentUpon>addNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addVsDVs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addVsDVs.Designer.cs">
+      <DependentUpon>addVsDVs.cs</DependentUpon>
+    </Compile>
     <Compile Include="BinarySerialization.cs" />
     <Compile Include="FSredact.cs">
       <SubType>Form</SubType>
@@ -71,6 +95,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addDV.resx">
+      <DependentUpon>addDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addFG.resx">
+      <DependentUpon>addFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVsDVs.resx">
+      <DependentUpon>addVsDVs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FSredact.resx">
       <DependentUpon>FSredact.cs</DependentUpon>
     </EmbeddedResource>

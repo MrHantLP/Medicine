@@ -44,6 +44,8 @@
             this.farmGroups.Name = "farmGroups";
             this.farmGroups.Size = new System.Drawing.Size(223, 225);
             this.farmGroups.TabIndex = 0;
+            this.farmGroups.SelectedIndexChanged += new System.EventHandler(this.farmGroups_SelectedIndexChanged);
+            this.farmGroups.DoubleClick += new System.EventHandler(this.farmGroups_DoubleClick);
             // 
             // label1
             // 
@@ -70,6 +72,7 @@
             this.DVs.Name = "DVs";
             this.DVs.Size = new System.Drawing.Size(223, 225);
             this.DVs.TabIndex = 3;
+            this.DVs.DoubleClick += new System.EventHandler(this.DVs_DoubleClick);
             // 
             // addFG
             // 
@@ -79,6 +82,7 @@
             this.addFG.TabIndex = 4;
             this.addFG.Text = "Добавить";
             this.addFG.UseVisualStyleBackColor = true;
+            this.addFG.Click += new System.EventHandler(this.addFG_Click);
             // 
             // addDV
             // 
@@ -88,6 +92,7 @@
             this.addDV.TabIndex = 5;
             this.addDV.Text = "Добавить";
             this.addDV.UseVisualStyleBackColor = true;
+            this.addDV.Click += new System.EventHandler(this.addDV_Click);
             // 
             // exit
             // 
@@ -113,6 +118,8 @@
             this.Controls.Add(this.farmGroups);
             this.Name = "FSredact";
             this.Text = "Редактирование фармакологического справочника";
+            this.Activated += new System.EventHandler(this.FSredact_Activated);
+            this.Load += new System.EventHandler(this.FSredact_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
